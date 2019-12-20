@@ -11,8 +11,8 @@ Film Club is a full stack web application enables movie lovers to signup and joi
 ### Wireframes:
 [frontend wireframes](https://xd.adobe.com/view/805cbd7b-e521-42fd-5302-be20da4bd17c-f66d/)
 ERD
-![alt text](src/images/filmclub-ERD.png")
-![alt text](src/images/mongoose.jpg")
+![alt text](images/IMG_20191220_090211.jpg)
+![alt text](images/ReelTalk-ERD.png)
 ### Technology used:
 - React
 - Axios
