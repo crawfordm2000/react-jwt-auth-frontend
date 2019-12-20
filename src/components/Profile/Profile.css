@@ -1,0 +1,19 @@
+div.profile-wrap {
+    text-align: center;
+}
+
+h4#weclome.welcome {
+    font-family: "Ritz", sans-serif;
+    color: rgb(0, 76, 138);
+    font-size: 30px;
+}
+
+div.profile-wrap {
+    width: 50%;
+    margin-left: 25%;
+}
+
+button#update,
+button#delete {
+    margin-left: 0;
+}

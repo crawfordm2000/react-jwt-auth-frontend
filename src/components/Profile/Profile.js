@@ -96,18 +96,9 @@ class Profile extends Component {
     console.log(this.state.user)
     if (this.state.user) {
       return (
-        <div>
-          <h4>{this.state.user.firstName} {this.state.user.lastName} Is Logged In</h4>
+        <div className='profile-wrap'>
+          <h4 id='welcome' className='welcome'>Welcome Back {this.state.user.firstName} {this.state.user.lastName}!</h4>
           <div>
-            <h2>Log Out</h2>
-
-            <form>
-              <input
-                value="Log Out"
-                type="submit"
-                onClick={this.props.handleLogOut}
-              />
-            </form>
           </div>
           <div className="col s12 l5 offset-l2 htmlForm-wrap">
             <form
@@ -144,7 +135,8 @@ class Profile extends Component {
               {/* SUBMIT BUTTON */}
               <div className="btn-wrap">
                 <button
-                  className="btn sign waves-effect waves-light"
+                  id='update'
+                  className="update btn sign waves-effect waves-light"
                   type="submit"
                   name="action"
                   onClick={event => this.updateUser(event)}
@@ -152,7 +144,8 @@ class Profile extends Component {
                   Update Your Profile
                 </button>
                 <button
-                  className="btn sign waves-effect waves-light"
+                  id='delete'
+                  className="delete btn sign waves-effect waves-light"
                   type="submit"
                   name="action"
                   onClick={event => this.handleDeleteUser(event)}

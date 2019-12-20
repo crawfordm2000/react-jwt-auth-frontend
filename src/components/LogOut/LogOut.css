@@ -1,0 +1,11 @@
+.logout-wrap {
+    text-align: center;
+}
+
+input.logout-text {
+    background-color: rgb(0, 76, 138);
+}
+
+h3.logout-header {
+    color: rgb(0, 76, 138);
+}
