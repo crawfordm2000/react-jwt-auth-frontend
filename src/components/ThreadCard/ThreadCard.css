@@ -13,3 +13,11 @@
 /* .thread-wrap.col.s12.m7 {
     height: 12rem;
 } */
+
+span.thread.card-title {
+    color: rgb(0, 0, 173);
+}
+
+p#thread-prompt {
+    color: rgb(0, 36, 104);
+}

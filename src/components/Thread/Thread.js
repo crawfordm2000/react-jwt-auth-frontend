@@ -94,11 +94,11 @@ class Thread extends Component {
       <div class="row">
         <div id="thread-area" class="col s12 m12 l7">
           <div className="thread-topic-wrap">
-            <p>
+          <h2 id='current-thread-title'>
               {this.state.currentThread ? this.state.currentThread.title : null}
-            </p>
+          </h2>
           </div>
-          <div>
+          <div id='thread-prompt'>
             {this.state.currentThread ? this.state.currentThread.prompt : null}
           </div>
         </div>
@@ -106,16 +106,18 @@ class Thread extends Component {
         <div id="response-area" class="col s12 m12 l5">
           <form onChange={(event) => this.handleInput(event)}>
             <div className="text-area-wrap">
-              <textarea className="text-area" name="text" form="usrform">
-                Start a discussion...
+              <textarea placeholder='Remember, be polite!' name="styled-textarea response-input-area" id="styled"   className="text-area" name="text" form="usrform">
+                
               </textarea>
             </div>
+            <div id='thread-btn-wrap'>
             <input
               id="thread-btn"
               className="btn waves-effect waves-light"
               type="submit"
               onClick={(event) => {this.handleCreateResponse(event)}}
             />
+            </div>
           </form>
           {this.state.responsesArray && this.state.user
             ? this.state.responsesArray.map(response => {

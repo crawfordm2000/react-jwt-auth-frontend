@@ -8,15 +8,15 @@ class ThreadResponseCard extends Component {
         <div class="row">
           <div class="col s12 m12 l12" >
          
-            <div class="card blue-grey darken-1">
+            <div class="card blue-grey response-card">
             <div class="card-action">
-            <a href="#"><i class="material-icons left">account_circle</i><span>{this.props.username}</span></a>
-          <a href="#"><i class="material-icons right">favorite</i></a>
+            <a href="#"><i class="material-icons white-text darken-4 left">account_circle</i><span className='white-text'>{this.props.username}</span></a>
+          <a href="#"><i class="material-icons white-text text-darken-4 right">favorite</i></a>
         </div>
-              <div class="card-content white-text response">
-                <p>
+              <div class="card-content large black-text response">
+                <h5 id='response-card-text'>
                   {this.props.responseData.text}
-                </p>
+                </h5>
               </div>
             </div>
           </div>

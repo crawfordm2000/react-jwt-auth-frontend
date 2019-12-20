@@ -1,0 +1,17 @@
+div.card-content.black-text.response {
+    margin: 0;
+}
+
+div.response-card-wrap {
+    margin-left: 5rem;
+}
+
+
+
+p#response-card-text {
+    font-size: 55px !important;
+}
+
+span.white-text {
+    color: white;
+}
