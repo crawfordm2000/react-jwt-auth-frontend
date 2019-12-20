@@ -97,7 +97,7 @@ class Profile extends Component {
     if (this.state.user) {
       return (
         <div className='profile-wrap'>
-          <h4 id='welcome' className='welcome'>Welcome Back {this.state.user.firstName} {this.state.user.lastName}!</h4>
+          <h3 id='welcome' className='welcome'>Welcome Back {this.state.user.firstName} {this.state.user.lastName}!</h3>
           <div>
           </div>
           <div className="col s12 l5 offset-l2 htmlForm-wrap">

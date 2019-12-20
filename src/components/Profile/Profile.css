@@ -2,7 +2,7 @@ div.profile-wrap {
     text-align: center;
 }
 
-h4#weclome.welcome {
+h3.welcome {
     font-family: "Ritz", sans-serif;
     color: rgb(0, 76, 138);
     font-size: 30px;
