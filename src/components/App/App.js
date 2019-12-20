@@ -129,7 +129,7 @@ class App extends Component {
           password: ""
         });
         const location = {
-          pathname: "/profile",
+          pathname: "/explore",
           state: { fromDashboard: true }
         };
         this.props.history.replace(location);
@@ -183,7 +183,7 @@ class App extends Component {
               render={props => {
                 return (
                   <Profile
-                  databaseUrl={databaseUrl}
+                    databaseUrl={databaseUrl}
                     isLoggedIn={this.state.isLoggedIn}
                     user={this.state.user}
                   />
@@ -205,11 +205,6 @@ class App extends Component {
               component={Thread}
               component={() => <Thread databaseUrl={databaseUrl} />}
             />
-            {/* <Route
-              path="/ThreadGallery"
-              component={ThreadGallery}
-              component={() => <ThreadGallery databaseUrl={databaseUrl} />}
-            /> */}
             <Route
               path="/CreateThread"
               component={CreateThread}

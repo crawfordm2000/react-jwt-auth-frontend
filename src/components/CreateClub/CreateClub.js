@@ -134,13 +134,22 @@ class CreateClub extends Component {
           {this.state.searchResults
             ? this.state.searchResults.results.map(result => {
                 return (
-                  <div>
-                    {result.title}{" "}
-                    <button
+                  <div className='row'>
+                      <div class="col s12 m6 l5">
+                        <div class="card blue-grey darken-1">
+                          <div class="card-content black-text text-lighten-2">
+                            <span class="card-title">{result.title}{" "}</span>
+                          </div>
+                          <div class="card-action">
+                            <button
                       onClick={event => this.setSelectedMovie(event, result)}
                     >
                       Select
                     </button>
+                          </div>
+                        </div>
+                      </div>
+                   
                   </div>
                 );
               })
