@@ -4,6 +4,7 @@ div.card-content.black-text.response {
 
 div.response-card-wrap {
     margin-left: 5rem;
+    height: 90px;
 }
 
 
@@ -15,3 +16,4 @@ p#response-card-text {
 span.white-text {
     color: white;
 }
+

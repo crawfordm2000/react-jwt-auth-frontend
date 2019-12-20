@@ -5,10 +5,10 @@ class ThreadResponseCard extends Component {
   render() {
     return (
       <div className="response-card-wrap">
-        <div class="row">
+        
           <div class="col s12 m12 l12" >
          
-            <div class="card blue-grey response-card">
+            <div class="response card blue-grey response-card">
             <div class="card-action">
             <a href="#"><i class="material-icons white-text darken-4 left">account_circle</i><span className='white-text'>{this.props.username}</span></a>
           <a href="#"><i class="material-icons white-text text-darken-4 right">favorite</i></a>
@@ -20,7 +20,7 @@ class ThreadResponseCard extends Component {
               </div>
             </div>
           </div>
-        </div>
+        
       </div>
     );
   }

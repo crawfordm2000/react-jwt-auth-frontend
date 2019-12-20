@@ -37,7 +37,7 @@ class CreateClub extends Component {
   handleCreateClub = event => {
     event.preventDefault();
     const newClub = {
-      title: this.state.selectedMovie.title,
+      title: this.state.title,
       description: this.state.description,
       currentTopic: this.state.currentTopic,
       backdropURL: `https://image.tmdb.org/t/p/w1280${this.state.selectedMovie.backdrop_path}`,
@@ -118,42 +118,56 @@ class CreateClub extends Component {
               </div>
               {/* SUBMIT BUTTON */}
               <div className="create-club-btn">
-                <button
+                <a
+                  href="/explore"
                   className="btn waves-effect waves-light"
                   type="submit"
                   name="action"
                   onClick={event => this.handleCreateClub(event)}
                 >
                   Create
-                </button>
+                </a>
               </div>
             </form>
           </div>
         </section>
         <div>
+        <div className="row">
           {this.state.searchResults
             ? this.state.searchResults.results.map(result => {
+
+                
                 return (
-                  <div className='row'>
-                      <div class="col s12 m6 l5">
-                        <div class="card blue-grey darken-1">
-                          <div class="card-content black-text text-lighten-2">
-                            <span class="card-title">{result.title}{" "}</span>
+            
+                    <div class="col s12 m6 l2">
+                      <div class="card blue-grey darken-1">
+                      <div className="card-image waves-effect waves-block waves-light">
+                            <img
+                              className="activator zoom"
+                              src={`https://image.tmdb.org/t/p/w1280${result.poster_path}`}
+                            ></img>
                           </div>
-                          <div class="card-action">
-                            <button
-                      onClick={event => this.setSelectedMovie(event, result)}
-                    >
-                      Select
-                    </button>
-                          </div>
+                        <div class="card-content black-text text-lighten-2">
+                          
+                          <span class="card-title">{result.title} </span>
+                        </div>
+                        <div class="card-action">
+                          <button
+                          className="btn-floating"
+                            onClick={event =>
+                              this.setSelectedMovie(event, result)
+                            }
+                          >
+                            <i class="material-icons">add</i>
+                          </button>
                         </div>
                       </div>
-                   
-                  </div>
+                    </div>
+                  
                 );
               })
             : null}
+            </div>
         </div>
       </div>
     );
